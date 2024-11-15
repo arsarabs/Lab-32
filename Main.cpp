@@ -16,8 +16,10 @@ const int JOIN_PROB = 45;
 int randomNumber();
 int printDivider();
 void seedRandom();
-void intializeQueue(deque<Car>& tollQueue);
+void intializeQueue(deque<Car>& tollQueue, int initalSize);
 void simulateCycle(deque<Car>& tollQueue, int cycle);
+void runSimulation();
+void display(deque<Car>& toll_queue);
 
 
 int main() {
@@ -35,9 +37,15 @@ int printDivider() {
 void seedRandom() {
 	srand(static_cast<unsigned int>(time(0)));
 }
-void intializeQueue(deque<Car>& tollQueue) {
-
+void intializeQueue(deque<Car>& tollQueue, int initalSize) {
+	
 }
 void simulateCycle(deque<Car>& tollQueue, int cycle) {
+
+}
+void runSimulation() {
+
+}
+void display(deque<Car>& toll_queue) {
 
 }
