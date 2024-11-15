@@ -54,10 +54,16 @@ void runSimulation() {
 	int cycle = 0;
 	
 	// Initialize the queue with the initial number of cars
+	intializeQueue(toll_queue, QUEUE_SIZE);
 
-	//then display
+		//then display
+		display(toll_queue);
 
 	//and finally, run simulation cycles until the queue is empty
+		while (!toll_queue.empty()) {
+			cycle++;
+			simulateCycle(toll_queue, cycle);
+		}
 }
 void display(deque<Car>& toll_queue) {
 	//use auto to display toll_queue
