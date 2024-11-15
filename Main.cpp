@@ -25,3 +25,19 @@ int main() {
 
 	return 0;
 }
+
+int randomNumber() {
+	return rand() % 100 + 1; // random num between 1-100
+}
+int printDivider() {
+	cout << "=============================================" << endl;
+}
+void seedRandom() {
+	srand(static_cast<unsigned int>(time(0)));
+}
+void intializeQueue(deque<Car>& tollQueue) {
+
+}
+void simulateCycle(deque<Car>& tollQueue, int cycle) {
+
+}
