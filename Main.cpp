@@ -22,8 +22,12 @@ void runSimulation();
 void display(deque<Car>& toll_queue);
 
 
-int main() {
+int main() { 
+	//Seed
+	seedRandom();
 
+	//& run simulation (all i need for main)
+	runSimulation();
 
 	return 0;
 }
@@ -38,14 +42,21 @@ void seedRandom() {
 	srand(static_cast<unsigned int>(time(0)));
 }
 void intializeQueue(deque<Car>& tollQueue, int initalSize) {
-	
+	//Simple for loop to intialize the deque with a specificed number of randomly generated cars/
+	for (int i = 0; i < initalSize; i++) {
+		Car car;
+		tollQueue.push_back(car);
+	}
 }
 void simulateCycle(deque<Car>& tollQueue, int cycle) {
-
+	//tough one : need to think this one through
 }
 void runSimulation() {
-
+	// tought one : need to think this through
 }
 void display(deque<Car>& toll_queue) {
-
+	//use auto to display toll_queue
+	for (auto& car : toll_queue) {
+		car.print();
+	}
 }
