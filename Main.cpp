@@ -5,16 +5,14 @@
 #include <cstdlib>
 #include <ctime>
 #include "Car.h"
-
 using namespace std;
 
 const int QUEUE_SIZE = 2;
 const int PAY_PROB = 55;
 const int JOIN_PROB = 45;
 
-
 int randomNumber();
-int printDivider();
+void printDivider();
 void seedRandom();
 void intializeQueue(deque<Car>& tollQueue, int initalSize);
 void simulateCycle(deque<Car>& tollQueue, int cycle);
@@ -35,7 +33,7 @@ int main() {
 int randomNumber() {
 	return rand() % 100 + 1; // random num between 1-100
 }
-int printDivider() {
+void printDivider() {
 	cout << "=============================================" << endl;
 }
 void seedRandom() {
@@ -49,10 +47,17 @@ void intializeQueue(deque<Car>& tollQueue, int initalSize) {
 	}
 }
 void simulateCycle(deque<Car>& tollQueue, int cycle) {
-	//tough one : need to think this one through
+	//
 }
 void runSimulation() {
-	// tought one : need to think this through
+	deque<Car> toll_queue;
+	int cycle = 0;
+	
+	// Initialize the queue with the initial number of cars
+
+	//then display
+
+	//and finally, run simulation cycles until the queue is empty
 }
 void display(deque<Car>& toll_queue) {
 	//use auto to display toll_queue
