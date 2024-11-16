@@ -47,6 +47,7 @@ void intializeQueue(deque<Car>& tollQueue, int initalSize) {
 	}
 }
 void simulateCycle(deque<Car>& tollQueue, int cycle) {
+	cout << endl;
 	cout << "Time: " << cycle << " Operation: " << endl;
 
 	//generate random number here 
@@ -77,6 +78,7 @@ void runSimulation() {
 	int cycle = 0;
 	
 	// Initialize the queue with the initial number of cars
+	cout << "Initial Queue:" << endl;
 	intializeQueue(toll_queue, QUEUE_SIZE);
 
 		//then display
@@ -87,6 +89,8 @@ void runSimulation() {
 			cycle++;
 			simulateCycle(toll_queue, cycle);
 		}
+
+		cout << "This simulation ran " << cycle << " cycles until the queue was empty; your results will vary." << endl;
 }
 void display(deque<Car>& toll_queue) {
 	//use auto to display toll_queue
