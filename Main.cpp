@@ -47,7 +47,18 @@ void intializeQueue(deque<Car>& tollQueue, int initalSize) {
 	}
 }
 void simulateCycle(deque<Car>& tollQueue, int cycle) {
-	//
+	cout << "Time: " << cycle << " Operation: " << endl;
+
+	//generate random number here 
+	int randNum = randomNumber();
+
+	// 55% probability: Car pays and leaves
+
+	// 45% probability: New car joins the queue
+
+	//display here 
+	cout << "Queue:" << endl;
+	display_queue(toll_queue);
 }
 void runSimulation() {
 	deque<Car> toll_queue;
