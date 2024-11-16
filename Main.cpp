@@ -90,7 +90,7 @@ void runSimulation() {
 			simulateCycle(toll_queue, cycle);
 		}
 
-		cout << "This simulation ran " << cycle << " cycles until the queue was empty; your results will vary." << endl;
+		cout << "This simulation ran " << cycle << " cycles until the queue was empty; results will vary." << endl;
 }
 void display(deque<Car>& toll_queue) {
 	//use auto to display toll_queue
