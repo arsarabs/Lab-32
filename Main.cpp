@@ -53,6 +53,18 @@ void simulateCycle(deque<Car>& tollQueue, int cycle) {
 	int randNum = randomNumber();
 
 	// 55% probability: Car pays and leaves
+	if (randNum <= PAY_PROB && !tollQueue.empty()) {
+		Car car = tollQueue.front();
+		tollQueue.pop_front();
+		cout << "Car Paid: ";
+		car.print();
+	}
+	else if(randNum > PAY_PROB && randNum <= PAY_PROB + JOIN_PROB) {
+		Car newCar;
+		tollQueue.push_back(newCar);
+		cout << "Joined Lane:";
+		newCar.print();
+	}
 
 	// 45% probability: New car joins the queue
 
