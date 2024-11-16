@@ -58,7 +58,7 @@ void simulateCycle(deque<Car>& tollQueue, int cycle) {
 
 	//display here 
 	cout << "Queue:" << endl;
-	display_queue(toll_queue);
+	display(tollQueue);
 }
 void runSimulation() {
 	deque<Car> toll_queue;
